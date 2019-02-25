@@ -227,49 +227,37 @@ ol {
 .intro-header {
   background-repeat: no-repeat;
   background-position: center top;
-  background-color: #333;
+  background: linear-gradient(30deg, #0077d9, #7580ff);
   position: relative;
   z-index: 1;
 }
 .intro-header .site-heading,
 .intro-header .page-heading {
   text-align: center;
-  padding: 120px 0;
-}
-@media only screen and (min-width : 768px) and (max-width : 1023px) {
-  .intro-header .site-heading,
-  .intro-header .page-heading {
-    padding: 120px 0;
-  }
+  padding: 120px 0 40px 0;
 }
 @media only screen and (max-width: 767px) {
   .intro-header .site-heading,
   .intro-header .page-heading {
-    padding: 80px 0 40px;
+    padding: 80px 0 20px;
   }
 }
 .intro-header .site-heading h1,
 .intro-header .page-heading h1 {
-  font-family: "ff-tisa-web-pro", sans-serif;
+  font-family: canada-type-gibson, sans-serif;
+  font-weight: 600;
+  font-style: normal;
   margin-top: 0;
-  font-size: 7em;
-  font-weight: 700;
-  font-style: italic;
+  font-size: 5.5em;
   color: #fff;
-  line-height: 0.9;
+  line-height: 1;
   padding: 20px 0 0;
   text-rendering: optimizeLegibility;
-  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 2px 30px rgba(0, 0, 0, 0.05);
 }
 .intro-header .site-heading h1.oneline,
 .intro-header .page-heading h1.oneline {
   padding-top: 80px;
-}
-@media only screen and (min-width : 768px) and (max-width : 1023px) {
-  .intro-header .site-heading h1,
-  .intro-header .page-heading h1 {
-    font-size: 7em;
-  }
 }
 @media only screen and (max-width: 767px) {
   .intro-header .site-heading h1,
@@ -283,16 +271,22 @@ ol {
 }
 .intro-header .sub-heading {
   display: inline-block;
-  font-size: 1.5em;
+  font-size: 2.3em;
   font-weight: 700;
   letter-spacing: -0.03em;
   color: #fff;
   position: relative;
   padding-bottom: 8px;
 }
+@media only screen and (max-width: 767px) {
+  .intro-header .sub-heading {
+    font-size: 1.5em;
+  }
+}
 .intro-header .sub-description {
-  padding-bottom: 70px;
-  font-size: 1em;
+  padding-bottom: 120px;
+  font-size: 1.3em;
+  font-weight: 500;
   line-height: 1.5;
   letter-spacing: -0.03em;
   width: 700px;
@@ -300,7 +294,9 @@ ol {
 }
 @media only screen and (max-width: 767px) {
   .intro-header .sub-description {
+    font-size: 1.1em;
     width: auto;
+    padding-bottom: 70px;
   }
 }
 .pager {
@@ -814,8 +810,6 @@ article.post .footnotes ol > li p {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   position: relative;
-  padding-bottom: 10px;
-  margin-bottom: 20px;
   margin-top: 80px;
   font-family: "brandon-grotesque", sans-serif;
 }
@@ -831,38 +825,9 @@ article.post .footnotes ol > li p {
     margin-top: 60px;
   }
 }
-.site-content h3:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 4px;
-  background: #3e3835;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-}
-html.page.about .intro-header.ih-about {
-  background-color: #30356e;
-  background-image: url(../img/about-bg.png);
-  background-size: 1600px auto;
-  background-position: center -50px;
-  -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25);
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25);
-}
 @media only screen and (min-width : 768px) and (max-width : 1023px) {
   html.page.about .intro-header.ih-about {
     background-size: 1400px auto;
-  }
-}
-@media only screen and (max-width: 767px) {
-  html.page.about .intro-header.ih-about {
-    background-size: 600px auto;
   }
 }
 html.page.about .intro-header .about-sub-area .sub-heading {
@@ -880,9 +845,6 @@ html.page.about .must-use-area.site-content h3 {
   color: #fff;
   position: relative;
   z-index: 3;
-}
-html.page.about .must-use-area.site-content h3:after {
-  background: #fff;
 }
 html.page.about .must-use-area .must-use {
   display: inline-block;
@@ -991,7 +953,7 @@ html.page.about .must-use-area .bg-text-2 {
   }
 }
 html.page.about .numbers-area {
-  background: #b9b8bc url(../img/numbers-bg.png) repeat center center;
+  background-color: #F2F6FC;
   padding: 0 0 80px;
 }
 @media only screen and (max-width: 767px) {
@@ -1002,15 +964,12 @@ html.page.about .numbers-area {
 }
 html.page.about .numbers-area h3 {
   color: #36333f;
-  background: #b9b8bc;
-}
-html.page.about .numbers-area h3:after {
-  color: #36333f;
 }
 html.page.about .numbers-area h4 {
   font-size: 1em;
   color: #828086;
   margin-top: 0;
+  margin-bottom: 40px;
 }
 html.page.about .numbers-area .number-boxes {
   width: 1024px;
@@ -1022,16 +981,15 @@ html.page.about .numbers-area .number-boxes li {
   padding: 30px 0 20px;
   margin: 10px 1% 10px 1%;
   background: #fff;
-  -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25);
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25);
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
-  border-bottom: 3px solid #e54e26;
+  -webkit-box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.03);
+  -moz-box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.03);
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.03);
 }
 html.page.about .numbers-area .number-boxes li i {
   font-size: 4em;
@@ -1040,14 +998,14 @@ html.page.about .numbers-area .number-boxes li i {
 }
 html.page.about .numbers-area .number-boxes li strong {
   display: block;
-  font-size: 2.25em;
-  font-family: "brandon-grotesque", sans-serif;
+  font-size: 1.9em;
+  font-family: 'Spoqa Han Sans', 'Sans-serif';
   color: #3b3844;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
 }
 html.page.about .numbers-area .number-boxes li span {
   display: block;
-  font-size: 0.875em;
+  font-size: 1em;
   color: #97969b;
   height: 2.5em;
 }
@@ -2735,9 +2693,9 @@ html.page.branding .branding-area .branding-sub-area .download-all {
   display: inline-block;
   letter-spacing: -0.03em;
   font-weight: bold;
-  -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25);
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.03);
+  -moz-box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.03);
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.03);
   background: #333;
   color: #fff;
   padding: 16px 24px;
@@ -3076,9 +3034,9 @@ html.page.contact .intro-header .contact-buttons .view-map {
   display: inline-block;
   letter-spacing: -0.03em;
   font-weight: bold;
-  -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25);
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.03);
+  -moz-box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.03);
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.03);
   background: #f55327;
   color: #6f210b;
   margin-right: 10px;
@@ -3105,9 +3063,9 @@ html.page.contact .intro-header .contact-buttons .other-button {
   display: inline-block;
   letter-spacing: -0.03em;
   font-weight: bold;
-  -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25);
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.03);
+  -moz-box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.03);
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.03);
   background: #333;
   color: #fff;
   background: #5f5f5f;
@@ -3262,9 +3220,9 @@ html.page.contact #map_controls .close-map {
   border: 1px solid #aaa;
   background: rgba(255, 255, 255, 0.8);
   line-height: 0.9;
-  -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25);
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.03);
+  -moz-box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.03);
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.03);
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;

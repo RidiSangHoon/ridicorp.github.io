@@ -1,18 +1,12 @@
 html.page.about {
   .intro-header {
     &.ih-about {
-      background-color: #30356e;
-      background-image: url(../img/about-bg.png);
-      background-size: 1600px auto;
-      background-position: center -50px;
-      .drop-shadow();
+//      background-image: url(../img/about-bg.jpg);
+//      background-size: 1600px auto;
+//      background-position: center -50px;
 
       @media @queries_md {
         background-size: 1400px auto;
-      }
-
-      @media @queries_sm {
-        background-size: 600px auto;
       }
     }
 
@@ -37,10 +31,6 @@ html.page.about {
       color: #fff;
       position: relative;
       z-index: 3;
-
-      &:after {
-        background: #fff;
-      }
     }
 
     .must-use {
@@ -132,7 +122,7 @@ html.page.about {
   }
 
   .numbers-area {
-    background: #b9b8bc url(../img/numbers-bg.png) repeat center center;
+    background-color: #F2F6FC;
     padding: 0 0 80px;
 
     @media @queries_sm {
@@ -142,17 +132,13 @@ html.page.about {
 
     h3 {
       color: #36333f;
-      background: #b9b8bc;
-
-      &:after {
-        color: #36333f;
-      }
     }
 
     h4 {
       font-size: 1em;
       color: #828086;
       margin-top: 0;
+      margin-bottom: 40px;
     }
 
     .number-boxes {
@@ -165,10 +151,8 @@ html.page.about {
         padding: 30px 0 20px;
         margin: 10px 1% 10px 1%;
         background: #fff;
-        .drop-shadow();
         .border-radius();
-
-        border-bottom: 3px solid #e54e26;
+        .drop-shadow();
 
         i {
           font-size: 4em;
@@ -178,16 +162,15 @@ html.page.about {
 
         strong {
           display: block;
-          font-size: 2.25em;
-          .brandon-grotesque();
-
+          font-size: 1.9em;   
+          font-family: 'Spoqa Han Sans', 'Sans-serif';
           color: #3b3844;
-          padding-bottom: 5px;
+          padding-bottom: 10px;
         }
 
         span {
           display: block;
-          font-size: 0.875em;
+          font-size: 1em;
           color: #97969b;
           height: 2.5em;
         }
